@@ -37,12 +37,12 @@ body {
 }
 
 .banner .product .soda {
-	background: var(--url) var(--left) 0, url(images/mockup.png);
+	background: var(--url) var(--left) 0, url(assets/mockup.png);
 	background-size: auto 100%;
 	width: 280px;
 	aspect-ratio: 725 / 1503;
 	background-blend-mode: multiply;
-	mask-image: url(images/mockup.png);
+	mask-image: url(assets/mockup.png);
 	mask-size: auto 100%;
 	transition: 0.7s;
 	position: absolute;
