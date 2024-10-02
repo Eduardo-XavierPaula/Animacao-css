@@ -48,5 +48,3 @@ Se você deseja contribuir com este projeto, sinta-se à vontade para fazer um f
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 ---
-
-Sinta-se à vontade para ajustar este README de acordo com as especificidades do seu projeto!
