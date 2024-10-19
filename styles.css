@@ -24,8 +24,8 @@ body {
 }
 
 .banner .product {
-	width: 500px;
-	height: 500px;
+	width: 280px;
+	aspect-ratio: 725 / 1503;
 	position: absolute;
 	bottom: 170px;
 	left: 50%;
@@ -68,7 +68,7 @@ body {
 	height: 600px;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: -350px;
+	bottom: -280px;
 }
 .banner:has(.product:hover) .rock img:nth-child(1) {
 	transform: translateX(-50%) translateY(20px);
@@ -108,8 +108,77 @@ body {
 	position: fixed;
 	right: 1rem;
 	top: 1rem;
+	max-width: 80%;
 }
 
 h1 {
 	font-size: 1.5rem;
+}
+.mobile_show {
+	display: none;
+}
+@media only screen and (max-width: 1200px) {
+	.mobile_show {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		color: white;
+		background-color: black;
+		padding: 1rem;
+		z-index: 9;
+		width: max-content;
+	}
+	.banner .product {
+		width: 150px;
+	}
+	.banner .product .soda {
+		width: 150px;
+	}
+	.banner .rock img:nth-child(1) {
+		height: 410px;
+		bottom: -130px;
+	}
+	.banner .rock img:nth-child(3),
+	.banner .rock img:nth-child(2) {
+		height: 600px;
+		bottom: -30px;
+	}
+	.banner .rock img:nth-child(2) {
+		left: 40%;
+	}
+	.banner .rock img:nth-child(3) {
+		right: 40%;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.banner .product {
+		width: 80px;
+	}
+	.banner .product .soda {
+		width: 80px;
+	}
+	.banner .rock img:nth-child(1) {
+		height: 310px;
+		bottom: -60px;
+	}
+	.banner .rock img:nth-child(3),
+	.banner .rock img:nth-child(2) {
+		height: 500px;
+		bottom: -50px;
+	}
+	.banner .rock img:nth-child(2) {
+		left: 25%;
+	}
+	.banner .rock img:nth-child(3) {
+		right: 25%;
+	}
+	.banner:has(.product:hover) .rock img:nth-child(2) {
+		transform: translateX(-80%) translateY(30px) scaleX(-1);
+	}
+	.banner:has(.product:hover) .rock img:nth-child(3) {
+		transform: translateX(80%) translateY(30px);
+	}
 }
