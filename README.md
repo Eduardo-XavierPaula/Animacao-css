@@ -38,6 +38,9 @@ Para iniciar o projeto localmente, siga os passos abaixo:
 ├── styles.css       # Folha de estilo CSS
 └── assets/          # Pasta para imagens e outros recursos (se necessário)
 ```
+## Resultado
+
+![chrome-capture-2024-10-2](https://github.com/user-attachments/assets/329d4d81-cc06-42b6-b96e-904d6320a90b)
 
 ## Como Contribuir
 
